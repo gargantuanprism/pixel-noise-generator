@@ -63,9 +63,10 @@ def full_random(image):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('x', type=int)
-    parser.add_argument('y', type=int)
-    parser.add_argument('--block-size', type=int)
+    parser.add_argument('x', type=int, help='Image X size')
+    parser.add_argument('y', type=int, help='Image Y size')
+    parser.add_argument('--block-size', type=int, 
+            help='Rect size for block fill')
 
     args = parser.parse_args()
 
